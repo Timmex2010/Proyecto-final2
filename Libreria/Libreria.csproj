@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3555127C-900E-4BAF-A00F-59E622AA6273}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Libreria</RootNamespace>
+    <AssemblyName>Libreria</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Acerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acerca.Designer.cs">
+      <DependentUpon>Acerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alta.Designer.cs">
+      <DependentUpon>Alta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Autor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autor.Designer.cs">
+      <DependentUpon>Autor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaAutor.Designer.cs">
+      <DependentUpon>ConsultaAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaCategoria.Designer.cs">
+      <DependentUpon>ConsultaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEditor.Designer.cs">
+      <DependentUpon>ConsultaEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaLibro.Designer.cs">
+      <DependentUpon>ConsultaLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBclass\Autor.cs" />
+    <Compile Include="DBclass\Categoria.cs" />
+    <Compile Include="DBclass\Editores.cs" />
+    <Compile Include="DBclass\Libro.cs" />
+    <Compile Include="DBclass\PrincipalFP.cs" />
+    <Compile Include="DBclass\Registro.cs" />
+    <Compile Include="Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAutor.Designer.cs">
+      <DependentUpon>EliminarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCategoria.Designer.cs">
+      <DependentUpon>EliminarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEditor.Designer.cs">
+      <DependentUpon>EliminarEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarLibro.Designer.cs">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarUsuario.Designer.cs">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libro.Designer.cs">
+      <DependentUpon>Libro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201511220910196_Registro.cs" />
+    <Compile Include="Migrations\201511220910196_Registro.Designer.cs">
+      <DependentUpon>201511220910196_Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511220940277_Registro1.cs" />
+    <Compile Include="Migrations\201511220940277_Registro1.Designer.cs">
+      <DependentUpon>201511220940277_Registro1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511221036363_Registro2.cs" />
+    <Compile Include="Migrations\201511221036363_Registro2.Designer.cs">
+      <DependentUpon>201511221036363_Registro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ModificarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAutor.Designer.cs">
+      <DependentUpon>ModificarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCatalogo.Designer.cs">
+      <DependentUpon>ModificarCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEditor.Designer.cs">
+      <DependentUpon>ModificarEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarLibro.Designer.cs">
+      <DependentUpon>ModificarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarUsuario.Designer.cs">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaInicial.Designer.cs">
+      <DependentUpon>PantallaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Acerca.resx">
+      <DependentUpon>Acerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alta.resx">
+      <DependentUpon>Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autor.resx">
+      <DependentUpon>Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAutor.resx">
+      <DependentUpon>ConsultaAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaCategoria.resx">
+      <DependentUpon>ConsultaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEditor.resx">
+      <DependentUpon>ConsultaEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaLibro.resx">
+      <DependentUpon>ConsultaLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAutor.resx">
+      <DependentUpon>EliminarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCategoria.resx">
+      <DependentUpon>EliminarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEditor.resx">
+      <DependentUpon>EliminarEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarLibro.resx">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarUsuario.resx">
+      <DependentUpon>EliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Libro.resx">
+      <DependentUpon>Libro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511220910196_Registro.resx">
+      <DependentUpon>201511220910196_Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511220940277_Registro1.resx">
+      <DependentUpon>201511220940277_Registro1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511221036363_Registro2.resx">
+      <DependentUpon>201511221036363_Registro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAutor.resx">
+      <DependentUpon>ModificarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCatalogo.resx">
+      <DependentUpon>ModificarCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEditor.resx">
+      <DependentUpon>ModificarEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarLibro.resx">
+      <DependentUpon>ModificarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaInicial.resx">
+      <DependentUpon>PantallaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="productos-libreria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="utiles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="7b117b985750b00_libreriatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="store-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-uabc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

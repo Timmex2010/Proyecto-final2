@@ -1,0 +1,20 @@
+﻿<Window x:Class="Libreria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Libreria"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid OpacityMask="#FF974545" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="517" Background="#FF207E31"/>
+        <Label x:Name="label_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="517" Background="#FF207E31" Margin="0,293,0,0"/>
+        <Label x:Name="label_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Background="#FF207E31" Height="309"/>
+        <Label x:Name="label_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Background="#FF207E31" Height="330" Margin="487,-21,0,0"/>
+        <Button x:Name="button" Content="Entrar" HorizontalAlignment="Left" Margin="30,257,0,0" VerticalAlignment="Top" Width="457" Height="36" FontSize="21.333" FontWeight="Bold" Click="button_Click"/>
+        <Image x:Name="utiles_png" Margin="351,136,30,103" Source="utiles.png" Stretch="Fill"/>
+        <Image x:Name="_7b117b985750b00_libreriatte_png" Margin="210,136,171,82" Source="7b117b985750b00_libreriatte.png" Stretch="Fill"/>
+        <Image x:Name="store_logo_png" Margin="138,26,157,188" Source="store-logo.png" Stretch="Fill"/>
+        <Image x:Name="productos_libreria_png" Margin="35,124,313,67" Source="productos-libreria.png" Stretch="Fill"/>
+    </Grid>
+</Window>
