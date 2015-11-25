@@ -14,6 +14,8 @@ namespace Libreria.DBclass
         public string Titulo { get; set; }
         public string Fecha { get; set; }
         public string Editores { get; set; }
+        public int Precio { get; set; }
+        public int Qty { get; set; }
         public virtual ICollection<Registro> id { get; set; }
         public virtual ICollection<Autor> idAutor { get; set; }
         public virtual ICollection<Editores> idEditores { get; set; }

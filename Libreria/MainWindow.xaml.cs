@@ -27,9 +27,8 @@ namespace Libreria
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            PantallaInicial vnt = new PantallaInicial();
+            Medio vnt = new Medio();
             vnt.Show();
-            this.Hide();
         }
     }
 }

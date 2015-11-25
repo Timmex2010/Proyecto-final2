@@ -170,6 +170,12 @@
     <Compile Include="EliminarUsuario.Designer.cs">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funciones.Designer.cs">
+      <DependentUpon>Funciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Libro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Medio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medio.Designer.cs">
+      <DependentUpon>Medio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201511220910196_Registro.cs" />
     <Compile Include="Migrations\201511220910196_Registro.Designer.cs">
       <DependentUpon>201511220910196_Registro.cs</DependentUpon>
@@ -193,6 +205,14 @@
     <Compile Include="Migrations\201511221036363_Registro2.cs" />
     <Compile Include="Migrations\201511221036363_Registro2.Designer.cs">
       <DependentUpon>201511221036363_Registro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511241635356_tablas.cs" />
+    <Compile Include="Migrations\201511241635356_tablas.Designer.cs">
+      <DependentUpon>201511241635356_tablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511252005103_tablas1.cs" />
+    <Compile Include="Migrations\201511252005103_tablas1.Designer.cs">
+      <DependentUpon>201511252005103_tablas1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModificarAutor.cs">
@@ -230,6 +250,12 @@
     </Compile>
     <Compile Include="PantallaInicial.Designer.cs">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos.Designer.cs">
+      <DependentUpon>Procesos.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -289,8 +315,14 @@
     <EmbeddedResource Include="EliminarUsuario.resx">
       <DependentUpon>EliminarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Funciones.resx">
+      <DependentUpon>Funciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Libro.resx">
       <DependentUpon>Libro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medio.resx">
+      <DependentUpon>Medio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511220910196_Registro.resx">
       <DependentUpon>201511220910196_Registro.cs</DependentUpon>
@@ -300,6 +332,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511221036363_Registro2.resx">
       <DependentUpon>201511221036363_Registro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511241635356_tablas.resx">
+      <DependentUpon>201511241635356_tablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511252005103_tablas1.resx">
+      <DependentUpon>201511252005103_tablas1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAutor.resx">
       <DependentUpon>ModificarAutor.cs</DependentUpon>
@@ -318,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaInicial.resx">
       <DependentUpon>PantallaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos.resx">
+      <DependentUpon>Procesos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

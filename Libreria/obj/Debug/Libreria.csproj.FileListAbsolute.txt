@@ -5,7 +5,6 @@ C:\Users\IoMeng\Desktop\Libreria\Libreria\bin\Debug\EntityFramework.dll
 C:\Users\IoMeng\Desktop\Libreria\Libreria\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\IoMeng\Desktop\Libreria\Libreria\bin\Debug\EntityFramework.xml
 C:\Users\IoMeng\Desktop\Libreria\Libreria\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\MainWindow.g.cs
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\App.g.cs
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria_MarkupCompile.cache
@@ -41,3 +40,8 @@ C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.ConsultaEditor.reso
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.ConsultaLibro.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.ConsultaUsuario.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Acerca.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Funciones.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Medio.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Procesos.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas1.resources

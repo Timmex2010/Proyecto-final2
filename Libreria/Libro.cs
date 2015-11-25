@@ -32,6 +32,7 @@ namespace Libreria
             li.Fecha = textBox3.Text;
             li.Titulo = textBox4.Text;
             li.Editores = textBox1.Text;
+            li.Precio = int.Parse(textBox5.Text);
             db.Libro.Add(li);
             db.SaveChanges();
 
@@ -41,6 +42,17 @@ namespace Libreria
             textBox2.Clear();
             textBox3.Clear();
             textBox4.Clear();
+            textBox5.Clear();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

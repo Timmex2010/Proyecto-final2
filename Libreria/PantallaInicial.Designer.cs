@@ -34,9 +34,6 @@
             this.formulario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.label1Plantilla = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
             this.altasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.libroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +58,10 @@
             this.porOcupacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1Plantilla = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
+            this.ordenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Plantilla)).BeginInit();
             this.SuspendLayout();
@@ -118,6 +119,7 @@
             this.editarToolStripMenuItem,
             this.borrarToolStripMenuItem,
             this.reportesToolStripMenuItem,
+            this.ordenToolStripMenuItem,
             this.formulariosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 23);
             this.menuStrip1.Name = "menuStrip1";
@@ -125,34 +127,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(716, 29);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // label1Plantilla
-            // 
-            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
-            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
-            this.label1Plantilla.Name = "label1Plantilla";
-            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
-            this.label1Plantilla.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Green;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(716, 23);
-            this.label1.TabIndex = 18;
-            // 
-            // pictureBox1Plantilla
-            // 
-            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
-            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
-            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
-            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1Plantilla.TabIndex = 17;
-            this.pictureBox1Plantilla.TabStop = false;
             // 
             // altasToolStripMenuItem
             // 
@@ -346,6 +320,40 @@
             this.editorToolStripMenuItem1.Text = "Editor";
             this.editorToolStripMenuItem1.Click += new System.EventHandler(this.editorToolStripMenuItem1_Click);
             // 
+            // label1Plantilla
+            // 
+            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
+            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
+            this.label1Plantilla.Name = "label1Plantilla";
+            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
+            this.label1Plantilla.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(716, 23);
+            this.label1.TabIndex = 18;
+            // 
+            // pictureBox1Plantilla
+            // 
+            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
+            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
+            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
+            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Plantilla.TabIndex = 17;
+            this.pictureBox1Plantilla.TabStop = false;
+            // 
+            // ordenToolStripMenuItem
+            // 
+            this.ordenToolStripMenuItem.Name = "ordenToolStripMenuItem";
+            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.ordenToolStripMenuItem.Text = "Orden";
+            // 
             // PantallaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,5 +409,6 @@
         private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porClienteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ordenToolStripMenuItem;
     }
 }
