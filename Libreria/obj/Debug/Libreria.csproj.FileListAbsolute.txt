@@ -45,3 +45,5 @@ C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas.r
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Medio.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Procesos.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas1.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas2.resources

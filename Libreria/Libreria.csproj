@@ -131,6 +131,7 @@
     <Compile Include="DBclass\Autor.cs" />
     <Compile Include="DBclass\Categoria.cs" />
     <Compile Include="DBclass\Editores.cs" />
+    <Compile Include="DBclass\Invoice.cs" />
     <Compile Include="DBclass\Libro.cs" />
     <Compile Include="DBclass\PrincipalFP.cs" />
     <Compile Include="DBclass\Registro.cs" />
@@ -213,6 +214,10 @@
     <Compile Include="Migrations\201511252005103_tablas1.cs" />
     <Compile Include="Migrations\201511252005103_tablas1.Designer.cs">
       <DependentUpon>201511252005103_tablas1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511260212040_tablas2.cs" />
+    <Compile Include="Migrations\201511260212040_tablas2.Designer.cs">
+      <DependentUpon>201511260212040_tablas2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModificarAutor.cs">
@@ -338,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511252005103_tablas1.resx">
       <DependentUpon>201511252005103_tablas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511260212040_tablas2.resx">
+      <DependentUpon>201511260212040_tablas2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAutor.resx">
       <DependentUpon>ModificarAutor.cs</DependentUpon>

@@ -27,5 +27,11 @@ namespace Libreria
             Procesos vnt = new Procesos();
             vnt.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PantallaInicial vnt = new PantallaInicial();
+            vnt.Show();
+        }
     }
 }

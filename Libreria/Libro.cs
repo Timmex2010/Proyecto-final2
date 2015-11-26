@@ -33,6 +33,7 @@ namespace Libreria
             li.Titulo = textBox4.Text;
             li.Editores = textBox1.Text;
             li.Precio = int.Parse(textBox5.Text);
+            li.Qty = int.Parse(textBox6.Text);
             db.Libro.Add(li);
             db.SaveChanges();
 
@@ -43,6 +44,7 @@ namespace Libreria
             textBox3.Clear();
             textBox4.Clear();
             textBox5.Clear();
+            textBox6.Clear();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

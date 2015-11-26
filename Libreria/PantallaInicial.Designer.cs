@@ -58,10 +58,10 @@
             this.porOcupacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1Plantilla = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
-            this.ordenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Plantilla)).BeginInit();
             this.SuspendLayout();
@@ -320,6 +320,13 @@
             this.editorToolStripMenuItem1.Text = "Editor";
             this.editorToolStripMenuItem1.Click += new System.EventHandler(this.editorToolStripMenuItem1_Click);
             // 
+            // ordenToolStripMenuItem
+            // 
+            this.ordenToolStripMenuItem.Name = "ordenToolStripMenuItem";
+            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.ordenToolStripMenuItem.Text = "Orden";
+            this.ordenToolStripMenuItem.Click += new System.EventHandler(this.ordenToolStripMenuItem_Click);
+            // 
             // label1Plantilla
             // 
             this.label1Plantilla.BackColor = System.Drawing.Color.Green;
@@ -347,12 +354,6 @@
             this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1Plantilla.TabIndex = 17;
             this.pictureBox1Plantilla.TabStop = false;
-            // 
-            // ordenToolStripMenuItem
-            // 
-            this.ordenToolStripMenuItem.Name = "ordenToolStripMenuItem";
-            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
-            this.ordenToolStripMenuItem.Text = "Orden";
             // 
             // PantallaInicial
             // 

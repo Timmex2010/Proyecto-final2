@@ -14,5 +14,6 @@ namespace Libreria.DBclass
         public DbSet<Autor> Autor { get; set; }
         public DbSet<Categoria>Categoria { get; set; }
         public DbSet <Editores> Editores { get; set; }
+        
     }
 }

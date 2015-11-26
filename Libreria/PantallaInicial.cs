@@ -152,5 +152,11 @@ namespace Libreria
             Acerca vnt = new Acerca();
             vnt.Show();
         }
+
+        private void ordenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Procesos vnt = new Procesos();
+            vnt.Show();
+        }
     }
 }
