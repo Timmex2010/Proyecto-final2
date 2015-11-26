@@ -39,7 +39,10 @@ namespace Libreria
                             {
                                 s.idLibro,
                                 s.Titulo,
-                                s.Fecha
+                                s.Fecha,
+                                s.Editores,
+                                s.Precio,
+                                s.Qty
                             };
             dataGridView1.DataSource = registros.ToList();
         }

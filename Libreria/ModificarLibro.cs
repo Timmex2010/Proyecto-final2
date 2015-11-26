@@ -43,6 +43,9 @@ namespace Libreria
                 agent.Fecha = textBox3.Text;
                 agent.Titulo = textBox4.Text;
                 agent.Editores = textBox1.Text;
+                agent.Precio = int.Parse(textBox5.Text);
+                agent.Qty = int.Parse(textBox6.Text);
+
 
                 db.SaveChanges();
             }
@@ -51,6 +54,8 @@ namespace Libreria
             textBox2.Clear();
             textBox3.Clear();
             textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
         }
 
         private void button3_Click(object sender, EventArgs e)
