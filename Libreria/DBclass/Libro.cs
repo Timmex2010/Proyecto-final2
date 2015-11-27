@@ -20,6 +20,8 @@ namespace Libreria.DBclass
         public virtual ICollection<Autor> idAutor { get; set; }
         public virtual ICollection<Editores> idEditores { get; set; }
         public virtual ICollection<Categoria> idCategoria { get; set; }
+        public virtual List<Invoice> InvoiceSaleList { get; set; }
+
 
     }
 }

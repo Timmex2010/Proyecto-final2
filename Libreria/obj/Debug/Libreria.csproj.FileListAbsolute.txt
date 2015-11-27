@@ -47,3 +47,7 @@ C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Procesos.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas1.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas2.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Login.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas3.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas4.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas5.resources

@@ -12,8 +12,10 @@ namespace Libreria.DBclass
         public DbSet<Registro> Registro { get; set; }
         public DbSet<Libro> Libro { get; set; }
         public DbSet<Autor> Autor { get; set; }
-        public DbSet<Categoria>Categoria { get; set; }
+        public DbSet<Categoria> Categoria { get; set; }
         public DbSet <Editores> Editores { get; set; }
-        
+       // public DbSet<Registro> SalesPersons { get; set; }
+        public DbSet<Invoice> Invoice { get; set; }
+
     }
 }

@@ -19,6 +19,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 
+
 namespace Libreria
 {
     public partial class Procesos : Form
@@ -167,6 +168,7 @@ namespace Libreria
             //Textboxes and labels are set to defaults
             textBox1.Text = string.Empty;
             textBox3.Text = string.Empty;
+            label5.Text = "Current product N/A";
             label6.Text= " ";
             //DataGrid items are set to null
             dataGridView1.DataSource = null;
@@ -179,7 +181,83 @@ namespace Libreria
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //we make sure there is at least one item in the cart and a sales person has been selected
+            if (ShoppingCart.Count > 0 && comboBox1.SelectedIndex > -1)
+            {
+                //auto dispose after no longer in scope
+                using (PrincipalFP db = new PrincipalFP())
+                {
+                    //All database transactions are considered 1 unit of work
+                    using (var dbTransaction = db.Database.BeginTransaction())
+                    {
+                        try
+                        {
+                            //we create the invoice object
+                            Invoice inv = new Invoice();
+                            inv.SaleDate = DateTime.Now;
+                            //assign sales person by querying the database using the Combobox selection
 
+                            comboBox1.SelectedIndex = 0;
+                            inv.id =
+                               db.Registro.SingleOrDefault(s => s.Nombre == (string)comboBox1.SelectedText);
+
+                            //for each product in the shopping cart we query the database
+                            foreach (var prod in ShoppingCart)
+                            {
+                                //get product record with id
+                                DBclass.Libro p = db.Libro.SingleOrDefault(i => i.idLibro == prod.idLibro);
+                                //reduce inventory
+                                int RemainingItems = p.Qty - prod.Qty >= 0 ? (p.Qty - prod.Qty) : p.Qty;
+                                if (p.Qty == RemainingItems)
+                                {
+                                    System.Windows.MessageBox.Show(
+                                        string.Format(
+                                            "Unable to sell Product #{0} not enough inventory, Do want to continue?",
+                                            p.idLibro),
+                                        "Not Enough Inventory", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+
+                                    //end transaction
+                                    dbTransaction.Rollback();
+                                    //exit procedure
+                                    return;
+                                }
+                                else
+                                {
+                                    //If Qty is ok we sell the product
+                                    p.Qty = RemainingItems;
+                                    inv.SaleList.Add(p);
+                                }
+
+                            }
+
+                            //we add the generated invoice to the Invoice Entity (Table)
+                            db.Invoice.Add(inv);
+                            //Save Changed to the database
+                            db.SaveChanges();
+                            //Make the changes permanent 
+                            dbTransaction.Commit();
+                            //We restore the form with defaults
+                            CleanUp();
+                            //Show confirmation message to the user
+                            System.Windows.MessageBox.Show(string.Format("Transaction #{0}  Saved", inv.InvoiceId), "Success", MessageBoxButton.OK,
+                                MessageBoxImage.Information);
+                        }
+                        catch
+                        {
+                            //if an error is produced, we rollback everything
+                            dbTransaction.Rollback();
+                            //We notify the user of the error
+                            System.Windows.MessageBox.Show("Transaction Error, unable to generate invoice", "Fatal Error", MessageBoxButton.OK,
+                                MessageBoxImage.Error);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Please select at least one product and a Sales Person", "Data Error",
+                    MessageBoxButton.OK, MessageBoxImage.Stop);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

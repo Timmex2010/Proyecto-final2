@@ -29,6 +29,7 @@ namespace Libreria
         {
             Medio vnt = new Medio();
             vnt.Show();
+            this.Hide();
         }
     }
 }

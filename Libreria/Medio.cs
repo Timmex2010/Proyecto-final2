@@ -30,13 +30,26 @@ namespace Libreria
 
         private void button3_Click(object sender, EventArgs e)
         {
-            PantallaInicial vnt = new PantallaInicial();
+            Login vnt = new Login();
             vnt.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MainWindow vnt = new MainWindow();
+            vnt.Show();
+            this.Hide();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Procesos vnt = new Procesos();
+            vnt.Show();
         }
     }
 }

@@ -183,6 +183,12 @@
     <Compile Include="Libro.Designer.cs">
       <DependentUpon>Libro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -218,6 +224,18 @@
     <Compile Include="Migrations\201511260212040_tablas2.cs" />
     <Compile Include="Migrations\201511260212040_tablas2.Designer.cs">
       <DependentUpon>201511260212040_tablas2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511270615460_tablas3.cs" />
+    <Compile Include="Migrations\201511270615460_tablas3.Designer.cs">
+      <DependentUpon>201511270615460_tablas3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511270629562_tablas4.cs" />
+    <Compile Include="Migrations\201511270629562_tablas4.Designer.cs">
+      <DependentUpon>201511270629562_tablas4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511270645423_tablas5.cs" />
+    <Compile Include="Migrations\201511270645423_tablas5.Designer.cs">
+      <DependentUpon>201511270645423_tablas5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModificarAutor.cs">
@@ -326,6 +344,9 @@
     <EmbeddedResource Include="Libro.resx">
       <DependentUpon>Libro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Medio.resx">
       <DependentUpon>Medio.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +367,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511260212040_tablas2.resx">
       <DependentUpon>201511260212040_tablas2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511270615460_tablas3.resx">
+      <DependentUpon>201511270615460_tablas3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511270629562_tablas4.resx">
+      <DependentUpon>201511270629562_tablas4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511270645423_tablas5.resx">
+      <DependentUpon>201511270645423_tablas5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarAutor.resx">
       <DependentUpon>ModificarAutor.cs</DependentUpon>
@@ -414,6 +444,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-Zgd1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CY50rh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yo6ZiV.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yo6ZiV1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
