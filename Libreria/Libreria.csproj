@@ -110,6 +110,12 @@
     <Compile Include="ConsultaCategoria.Designer.cs">
       <DependentUpon>ConsultaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaComprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaComprar.Designer.cs">
+      <DependentUpon>ConsultaComprar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     <EmbeddedResource Include="ConsultaCategoria.resx">
       <DependentUpon>ConsultaCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaComprar.resx">
+      <DependentUpon>ConsultaComprar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaEditor.resx">
       <DependentUpon>ConsultaEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +465,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yo6ZiV1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AP-Acquista-Icon_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienda eufar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

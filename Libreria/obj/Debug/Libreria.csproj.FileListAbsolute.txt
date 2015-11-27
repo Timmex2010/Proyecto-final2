@@ -51,3 +51,4 @@ C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Login.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas3.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas4.resources
 C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.Migrations.tablas5.resources
+C:\Users\IoMeng\Desktop\Libreria\Libreria\obj\Debug\Libreria.ConsultaComprar.resources

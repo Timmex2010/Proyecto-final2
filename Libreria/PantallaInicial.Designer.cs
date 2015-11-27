@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.formulario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label1Plantilla = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
             this.altasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.libroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,9 +58,11 @@
             this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1Plantilla = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
+            this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formulario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Plantilla)).BeginInit();
             this.SuspendLayout();
@@ -77,38 +78,6 @@
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cerrarToolStripMenuItem
-            // 
-            this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
-            this.cerrarToolStripMenuItem.Text = "&Cerrar";
-            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(197, 6);
-            // 
-            // formulario1ToolStripMenuItem
-            // 
-            this.formulario1ToolStripMenuItem.Name = "formulario1ToolStripMenuItem";
-            this.formulario1ToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
-            this.formulario1ToolStripMenuItem.Text = "&AcercaDe";
-            this.formulario1ToolStripMenuItem.Click += new System.EventHandler(this.formulario1ToolStripMenuItem_Click);
-            // 
-            // formulariosToolStripMenuItem
-            // 
-            this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formulario1ToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.cerrarToolStripMenuItem});
-            this.formulariosToolStripMenuItem.Image = global::Libreria.Properties.Resources.salir;
-            this.formulariosToolStripMenuItem.MergeIndex = 0;
-            this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
-            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(72, 25);
-            this.formulariosToolStripMenuItem.Text = "Salir";
             // 
             // menuStrip1
             // 
@@ -127,6 +96,34 @@
             this.menuStrip1.Size = new System.Drawing.Size(716, 29);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // label1Plantilla
+            // 
+            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
+            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
+            this.label1Plantilla.Name = "label1Plantilla";
+            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
+            this.label1Plantilla.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(716, 23);
+            this.label1.TabIndex = 18;
+            // 
+            // pictureBox1Plantilla
+            // 
+            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
+            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
+            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
+            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Plantilla.TabIndex = 17;
+            this.pictureBox1Plantilla.TabStop = false;
             // 
             // altasToolStripMenuItem
             // 
@@ -279,7 +276,8 @@
             this.porFotoToolStripMenuItem,
             this.porOcupacionToolStripMenuItem,
             this.categoriaToolStripMenuItem2,
-            this.editorToolStripMenuItem1});
+            this.editorToolStripMenuItem1,
+            this.comprarToolStripMenuItem});
             this.reportesToolStripMenuItem.Image = global::Libreria.Properties.Resources.consu;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(105, 25);
@@ -322,38 +320,50 @@
             // 
             // ordenToolStripMenuItem
             // 
+            this.ordenToolStripMenuItem.Image = global::Libreria.Properties.Resources.AP_Acquista_Icon_0;
             this.ordenToolStripMenuItem.Name = "ordenToolStripMenuItem";
-            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(69, 25);
+            this.ordenToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.ordenToolStripMenuItem.Text = "Orden";
             this.ordenToolStripMenuItem.Click += new System.EventHandler(this.ordenToolStripMenuItem_Click);
             // 
-            // label1Plantilla
+            // formulariosToolStripMenuItem
             // 
-            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
-            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
-            this.label1Plantilla.Name = "label1Plantilla";
-            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
-            this.label1Plantilla.TabIndex = 16;
+            this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formulario1ToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.cerrarToolStripMenuItem});
+            this.formulariosToolStripMenuItem.Image = global::Libreria.Properties.Resources.salir;
+            this.formulariosToolStripMenuItem.MergeIndex = 0;
+            this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
+            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(72, 25);
+            this.formulariosToolStripMenuItem.Text = "Salir";
             // 
-            // label1
+            // formulario1ToolStripMenuItem
             // 
-            this.label1.BackColor = System.Drawing.Color.Green;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(716, 23);
-            this.label1.TabIndex = 18;
+            this.formulario1ToolStripMenuItem.Name = "formulario1ToolStripMenuItem";
+            this.formulario1ToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.formulario1ToolStripMenuItem.Text = "&AcercaDe";
+            this.formulario1ToolStripMenuItem.Click += new System.EventHandler(this.formulario1ToolStripMenuItem_Click);
             // 
-            // pictureBox1Plantilla
+            // toolStripMenuItem2
             // 
-            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
-            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
-            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
-            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1Plantilla.TabIndex = 17;
-            this.pictureBox1Plantilla.TabStop = false;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(197, 6);
+            // 
+            // cerrarToolStripMenuItem
+            // 
+            this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
+            this.cerrarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.cerrarToolStripMenuItem.Text = "&Cerrar";
+            this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
+            // 
+            // comprarToolStripMenuItem
+            // 
+            this.comprarToolStripMenuItem.Name = "comprarToolStripMenuItem";
+            this.comprarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.comprarToolStripMenuItem.Text = "Comprar";
+            this.comprarToolStripMenuItem.Click += new System.EventHandler(this.comprarToolStripMenuItem_Click);
             // 
             // PantallaInicial
             // 
@@ -411,5 +421,6 @@
         private System.Windows.Forms.ToolStripMenuItem porClienteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editorToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ordenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comprarToolStripMenuItem;
     }
 }

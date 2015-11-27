@@ -158,5 +158,11 @@ namespace Libreria
             Procesos vnt = new Procesos();
             vnt.Show();
         }
+
+        private void comprarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaComprar vnt = new ConsultaComprar();
+            vnt.Show();
+        }
     }
 }
