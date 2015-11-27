@@ -44,6 +44,7 @@
             // 
             // label1
             // 
+            this.label1.Location = new System.Drawing.Point(0, 29);
             this.label1.Size = new System.Drawing.Size(707, 23);
             // 
             // dataGridView1
@@ -64,16 +65,16 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(190, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(467, 104);
+            this.groupBox1.Size = new System.Drawing.Size(467, 129);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta de Comprar";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(158, 69);
+            this.button2.Location = new System.Drawing.Point(132, 77);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 29);
+            this.button2.Size = new System.Drawing.Size(183, 29);
             this.button2.TabIndex = 2;
             this.button2.Text = "Consulta";
             this.button2.UseVisualStyleBackColor = true;

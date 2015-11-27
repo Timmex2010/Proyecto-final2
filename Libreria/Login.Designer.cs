@@ -36,8 +36,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,14 +46,14 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(503, 23);
+            this.label1.Size = new System.Drawing.Size(531, 23);
             this.label1.TabIndex = 46;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(393, 221);
+            this.button1.Location = new System.Drawing.Point(421, 251);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 43);
             this.button1.TabIndex = 47;
@@ -65,9 +65,9 @@
             // 
             this.label1Plantilla.BackColor = System.Drawing.Color.Green;
             this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1Plantilla.Location = new System.Drawing.Point(0, 267);
+            this.label1Plantilla.Location = new System.Drawing.Point(0, 297);
             this.label1Plantilla.Name = "label1Plantilla";
-            this.label1Plantilla.Size = new System.Drawing.Size(503, 23);
+            this.label1Plantilla.Size = new System.Drawing.Size(531, 23);
             this.label1Plantilla.TabIndex = 45;
             // 
             // label2
@@ -117,33 +117,33 @@
             this.textBox2.Size = new System.Drawing.Size(122, 26);
             this.textBox2.TabIndex = 52;
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(241, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 43);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "Aceptar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(119, 179);
+            this.button3.Image = global::Libreria.Properties.Resources.Capture2;
+            this.button3.Location = new System.Drawing.Point(12, 251);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 43);
             this.button3.TabIndex = 54;
-            this.button3.Text = "Registro";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::Libreria.Properties.Resources.Capture;
+            this.button2.Location = new System.Drawing.Point(217, 182);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 42);
+            this.button2.TabIndex = 53;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(503, 290);
+            this.ClientSize = new System.Drawing.Size(531, 320);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);

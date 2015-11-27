@@ -37,7 +37,8 @@ namespace Libreria
             PrincipalFP db = new PrincipalFP();
             comboBox1.DataSource = db.Registro.ToList();
             comboBox1.DisplayMember = "Nombre";
-            comboBox1.SelectedText= "id";
+            // comboBox1.SelectedText= "id";
+            comboBox1.ValueMember = "id";
             comboBox1.SelectedIndex = 0;
         }
 
@@ -199,7 +200,7 @@ namespace Libreria
 
                             comboBox1.SelectedIndex = 0;
                             inv.id =
-                               db.Registro.SingleOrDefault(s => s.Nombre == (string)comboBox1.SelectedText);
+                               db.Registro.SingleOrDefault(s => s.id == (int)comboBox1.SelectedValue);
 
                             //for each product in the shopping cart we query the database
                             foreach (var prod in ShoppingCart)
@@ -263,6 +264,11 @@ namespace Libreria
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

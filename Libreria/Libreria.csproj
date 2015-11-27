@@ -243,6 +243,10 @@
     <Compile Include="Migrations\201511270645423_tablas5.Designer.cs">
       <DependentUpon>201511270645423_tablas5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511270716209_tablas6.cs" />
+    <Compile Include="Migrations\201511270716209_tablas6.Designer.cs">
+      <DependentUpon>201511270716209_tablas6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModificarAutor.cs">
       <SubType>Form</SubType>
@@ -386,6 +390,9 @@
     <EmbeddedResource Include="Migrations\201511270645423_tablas5.resx">
       <DependentUpon>201511270645423_tablas5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511270716209_tablas6.resx">
+      <DependentUpon>201511270716209_tablas6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarAutor.resx">
       <DependentUpon>ModificarAutor.cs</DependentUpon>
     </EmbeddedResource>
@@ -474,6 +481,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tienda eufar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTRO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REGISTRARSE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_Up-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

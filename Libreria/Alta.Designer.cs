@@ -129,7 +129,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(394, 298);
+            this.button3.Location = new System.Drawing.Point(246, 292);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 47);
             this.button3.TabIndex = 40;
@@ -141,11 +141,11 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(265, 297);
+            this.button2.Image = global::Libreria.Properties.Resources.Capture2;
+            this.button2.Location = new System.Drawing.Point(413, 292);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 48);
             this.button2.TabIndex = 39;
-            this.button2.Text = "Registro";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
