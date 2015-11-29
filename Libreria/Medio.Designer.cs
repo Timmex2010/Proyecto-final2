@@ -124,7 +124,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1Plantilla);
             this.Name = "Medio";
-            this.Text = "Medio";
+            this.Text = "Index";
             this.Load += new System.EventHandler(this.Medio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

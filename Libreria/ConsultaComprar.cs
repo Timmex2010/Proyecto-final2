@@ -32,8 +32,10 @@ namespace Libreria
         private void button2_Click(object sender, EventArgs e)
         {
             PrincipalFP db = new PrincipalFP();
+            Registro r = new Registro();
             int id = int.Parse(textBox1.Text);
             var registros = from s in db.Invoice
+                            //join Nombre in db.Registro on s.id equals r.id
                             where s.InvoiceId == id
                             select new
                             {

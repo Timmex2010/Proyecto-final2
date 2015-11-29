@@ -30,9 +30,6 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.label1Plantilla = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
             this.altasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.libroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,12 +54,15 @@
             this.porOcupacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.editorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.cerrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comprarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1Plantilla = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1Plantilla = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Plantilla)).BeginInit();
             this.SuspendLayout();
@@ -71,11 +71,11 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(579, 444);
+            this.button1.Image = global::Libreria.Properties.Resources.application_exit;
+            this.button1.Location = new System.Drawing.Point(583, 414);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 38);
+            this.button1.Size = new System.Drawing.Size(95, 68);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -96,34 +96,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(716, 29);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // label1Plantilla
-            // 
-            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
-            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
-            this.label1Plantilla.Name = "label1Plantilla";
-            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
-            this.label1Plantilla.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Green;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(716, 23);
-            this.label1.TabIndex = 18;
-            // 
-            // pictureBox1Plantilla
-            // 
-            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
-            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
-            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
-            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
-            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1Plantilla.TabIndex = 17;
-            this.pictureBox1Plantilla.TabStop = false;
             // 
             // altasToolStripMenuItem
             // 
@@ -318,6 +290,13 @@
             this.editorToolStripMenuItem1.Text = "Editor";
             this.editorToolStripMenuItem1.Click += new System.EventHandler(this.editorToolStripMenuItem1_Click);
             // 
+            // comprarToolStripMenuItem
+            // 
+            this.comprarToolStripMenuItem.Name = "comprarToolStripMenuItem";
+            this.comprarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.comprarToolStripMenuItem.Text = "Comprar";
+            this.comprarToolStripMenuItem.Click += new System.EventHandler(this.comprarToolStripMenuItem_Click);
+            // 
             // ordenToolStripMenuItem
             // 
             this.ordenToolStripMenuItem.Image = global::Libreria.Properties.Resources.AP_Acquista_Icon_0;
@@ -358,12 +337,33 @@
             this.cerrarToolStripMenuItem.Text = "&Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.cerrarToolStripMenuItem_Click);
             // 
-            // comprarToolStripMenuItem
+            // label1Plantilla
             // 
-            this.comprarToolStripMenuItem.Name = "comprarToolStripMenuItem";
-            this.comprarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
-            this.comprarToolStripMenuItem.Text = "Comprar";
-            this.comprarToolStripMenuItem.Click += new System.EventHandler(this.comprarToolStripMenuItem_Click);
+            this.label1Plantilla.BackColor = System.Drawing.Color.Green;
+            this.label1Plantilla.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label1Plantilla.Location = new System.Drawing.Point(0, 504);
+            this.label1Plantilla.Name = "label1Plantilla";
+            this.label1Plantilla.Size = new System.Drawing.Size(716, 23);
+            this.label1Plantilla.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Green;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(716, 23);
+            this.label1.TabIndex = 18;
+            // 
+            // pictureBox1Plantilla
+            // 
+            this.pictureBox1Plantilla.Image = global::Libreria.Properties.Resources.store_logo;
+            this.pictureBox1Plantilla.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox1Plantilla.Name = "pictureBox1Plantilla";
+            this.pictureBox1Plantilla.Size = new System.Drawing.Size(161, 82);
+            this.pictureBox1Plantilla.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1Plantilla.TabIndex = 17;
+            this.pictureBox1Plantilla.TabStop = false;
             // 
             // PantallaInicial
             // 

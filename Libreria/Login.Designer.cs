@@ -155,7 +155,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1Plantilla);
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "Log in";
             this.ResumeLayout(false);
             this.PerformLayout();
 

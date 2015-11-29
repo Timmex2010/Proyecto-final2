@@ -506,6 +506,42 @@
   <ItemGroup>
     <None Include="Resources\Capture2.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar-icono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar-icono1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar-buscar-ampliar-icono-9630-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar-TuneaTaringa.blogspot.com-Barras Separadoras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_ajouter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk-save-yellow-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_edit_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

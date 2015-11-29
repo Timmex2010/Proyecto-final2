@@ -141,7 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1Plantilla);
             this.Name = "Acerca";
-            this.Text = "Acerca";
+            this.Text = "Acerca de";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1Plantilla)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
