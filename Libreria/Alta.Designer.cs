@@ -219,6 +219,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox11.Location = new System.Drawing.Point(96, 63);
             this.textBox11.Name = "textBox11";
+            this.textBox11.PasswordChar = '*';
             this.textBox11.Size = new System.Drawing.Size(275, 26);
             this.textBox11.TabIndex = 27;
             // 
