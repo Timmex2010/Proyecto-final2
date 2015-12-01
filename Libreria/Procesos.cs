@@ -198,7 +198,7 @@ namespace Libreria
                             inv.SaleDate = DateTime.Now;
                             //assign sales person by querying the database using the Combobox selection
 
-                            comboBox1.SelectedIndex = 0;
+                            //comboBox1.SelectedIndex = 0;
                             inv.id =
                                db.Registro.SingleOrDefault(s => s.id == (int)comboBox1.SelectedValue);
 

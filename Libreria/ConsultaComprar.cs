@@ -41,7 +41,7 @@ namespace Libreria
                             {
                                 s.InvoiceId,
                                 s.SaleDate,
-                                id
+                                
                             };
             dataGridView1.DataSource = registros.ToList();
         }
